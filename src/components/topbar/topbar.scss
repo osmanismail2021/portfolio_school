@@ -1,0 +1,251 @@
+@import "../../global.scss";
+
+//rgba(206,188,155,1)
+// rgba(85,63,50,1)
+//rgba(42,31,25,1)
+ 
+
+
+.topbar {
+    width: 100%;
+    height: 75px;
+    color: white;
+    position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 3 ;
+    transition: all 1s ease;
+    overflow: hidden !important;
+
+    .stage {
+        height: 60px;
+        width: 150px;
+        display: flex;
+        perspective: 9999px;
+        transform-style: preserve-3d;
+        
+        
+
+        .layer {
+            width: 100%;
+            height: 100%;
+            margin-left: -10px;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+            animation-fill-mode: forwards;
+            transform: rotateY(20deg) rotateX(12deg) translateZ(0);
+            overflow: hidden;
+
+            &:after {
+                font: 28px/0.65'Arima Madurai', cursive;
+                content: "OsMaN\a    Ismail";
+                white-space: pre;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 18px;
+                color: whitesmoke;
+                letter-spacing: -1px;
+                text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+              }
+              
+              &:nth-child(1):after {
+                transform: translateZ(0px);
+              }
+              
+              &:nth-child(2):after {
+                transform: translateZ(-1.5px);
+              }
+              
+              &:nth-child(3):after {
+                transform: translateZ(-3px);
+              }
+              
+              &:nth-child(4):after {
+                transform: translateZ(-4.5px);
+              }
+              
+              &:nth-child(5):after {
+                transform: translateZ(-6px);
+              }
+              
+              &:nth-child(6):after {
+                transform: translateZ(-7.5px);
+              }
+              
+              &:nth-child(7):after {
+                transform: translateZ(-9px);
+              }
+              
+              &:nth-child(8):after {
+                transform: translateZ(-10.5px);
+              }
+              
+              &:nth-child(9):after {
+                transform: translateZ(-12px);
+              }
+              
+              &:nth-child(10):after {
+                transform: translateZ(-13.5px);
+              }
+              
+              &:nth-child(11):after {
+                transform: translateZ(-15px);
+              }
+              
+              &:nth-child(12):after {
+                transform: translateZ(-16.5px);
+              }
+              
+              &:nth-child(13):after {
+                transform: translateZ(-18px);
+              }
+              
+              &:nth-child(14):after {
+                transform: translateZ(-19.5px);
+              }
+              
+              &:nth-child(15):after {
+                transform: translateZ(-21px);
+              }
+              
+              &:nth-child(16):after {
+                transform: translateZ(-22.5px);
+              }
+              
+              &:nth-child(17):after {
+                transform: translateZ(-24px);
+              }
+              
+              &:nth-child(18):after {
+                transform: translateZ(-25.5px);
+              }
+              
+              &:nth-child(19):after {
+                transform: translateZ(-27px);
+              }
+              
+              &:nth-child(20):after {
+                transform: translateZ(-28.5px);
+              }
+              
+              &:nth-child(n+10):after {
+                -webkit-text-stroke: 3px rgba(107, 107, 107, 0.25);
+              }
+              
+              &:nth-child(n+11):after {
+                -webkit-text-stroke: 15px rgb(41, 38, 38);
+                text-shadow: 6px 0 6px rgb(10, 2, 2), 5px 5px 5px rgb(0, 0, 0), 0 6px 6px rgb(29, 28, 28);
+              }
+              
+              &:nth-child(n+12):after {
+                -webkit-text-stroke: 15px rgba(51, 48, 48, 0.89);
+              }
+              
+              &:last-child:after {
+                -webkit-text-stroke: 17px rgba(82, 77, 77, 0.1);
+              }
+              
+              &:first-child:after {
+                color: #fff;
+                text-shadow: none;
+              }
+              
+              @keyframes ಠ_ಠ {
+                100% {
+                  transform: rotateY(-10deg) rotateX(-12deg);
+                }
+              }
+
+              @include mobile{
+                margin-left: -25px;
+              }
+          }
+          
+          
+      }
+
+    
+      
+
+    .wrapper {
+   
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      align-items:center ;
+      justify-content: space-between;
+      }
+            .logo {
+              font-size: 40px;
+              font-weight: 800;
+              text-decoration: none;
+              color: inherit;
+              margin-left: 8px;
+          }
+        
+
+        
+ 
+        
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: 20px;
+                cursor: pointer;
+                
+
+                border: solid 2px;
+                padding: 10px;
+                border-radius: 5px;
+
+                span {
+                    width: 100%;
+                    height: 3px;
+                    background-color: rgb(240, 236, 231);
+                    transform-origin: left;
+                    transition: all 2s ease;
+                    
+                }
+            }
+      
+    
+
+    &.active {
+        
+        background: rgb(130, 130, 134);
+  background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
+  background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
+        color: white;
+
+        .hamburger {
+            span {
+                &:first-child {
+                    background-color: rgb(249, 246, 246);
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    
+}

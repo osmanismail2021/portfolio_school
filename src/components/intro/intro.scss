@@ -1,0 +1,491 @@
+@import "../../global.scss";
+
+
+
+.intro {
+
+
+   
+  background: rgb(130, 130, 134);
+  background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
+  background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
+    display: flex;
+    position: relative;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left{
+        flex: 0.5; 
+        overflow: hidden;
+        
+
+        .imgContainer{
+            width: 745px;
+            height: 100vh;
+            // clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+            // background-color: white;
+            display: flex;
+            align-items: flex-end;
+            margin-left: -20px;
+            //margin-top: -30px;
+            margin-bottom: 0;
+            
+            
+            
+
+            @include mobile{
+                align-items: flex-start;
+                margin-left: 50px;
+            }
+            
+            // img{
+            // width: 100%;
+            // height: 100%;
+            // }
+
+            .vector {
+                position: absolute;
+                width: 45%;
+                margin-left: -80px;
+                margin-bottom: 85px;
+            }
+
+        
+
+            .osman{
+                z-index: 1;
+                position: relative;
+                width: 100%;
+                margin-left: 20px;
+                margin-bottom: 0px;
+
+                @include mobile{
+                    width: 50%;
+                    height: 70%;
+                    margin-left: 150px;
+                }
+
+            }
+        }
+    }
+    .right{
+        flex: 0.5;
+        position: relative;
+        display: block;
+
+        
+        
+
+        .wrapper{
+            width: 100%;
+            height: 85%;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+
+            h1{
+                margin-left: -50px;
+                font-family: 'Fredoka', sans-serif;
+                font-size: 4em;
+                font-weight: 700;
+                color: #ffffff;
+                text-shadow: 1px 1px 1px #111010,
+                    1px 2px 1px #1d0f0f,
+                    1px 3px 1px #160d0d,
+                    1px 4px 1px #0c0707,
+                    1px 5px 1px #110606,
+                    1px 6px 1px #919191,
+                    1px 7px 1px #919191,
+                    1px 8px 1px #919191,
+                    1px 9px 1px #919191,
+                    1px 10px 1px #919191,
+                1px 18px 6px rgba(16,16,16,0.4),
+                1px 22px 10px rgba(16,16,16,0.2),
+                1px 25px 35px rgba(16,16,16,0.2),
+                1px 30px 60px rgba(16,16,16,0.4);
+
+                @include mobile{
+                    font-size: 30px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                }
+            }
+
+            .box{
+                display: flex;
+                margin-left: -210px;
+
+                @include mobile{
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: -70px;
+                    
+                }
+
+               
+
+                .inner{
+                    width: 400px;
+                    height: 200px;
+                    line-height: 200px;
+                    font-size: 4em;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    white-space: nowrap;
+                    overflow: hidden;
+
+                    @include mobile{
+                        width: 300px;
+                        height: 100px;
+                        line-height: 100px;
+                        
+                    }
+
+                    
+
+                    
+
+                   
+    
+                &:first-child {
+                        background-color: rgb(5, 0, 12);
+                        color: rgb(189, 187, 194);
+                        transform-origin: right;
+                        transform: perspective(100px) rotateY(-15deg);
+
+                        
+                    }
+                    
+                &:last-child {
+                        background-color: rgba(26, 24, 31, 0.89);
+                        color: rgb(78, 76, 88);
+                        transform-origin: left;
+                        transform: perspective(100px) rotateY(15deg);
+                    }
+                    
+                span {
+                        position: absolute;
+                        animation: marquee 5s linear infinite;
+                    }
+                    
+                &:first-child span {
+                        animation-delay: 2.5s;
+                        left: -100%;
+                    }
+                    
+                    @keyframes marquee {
+                        from {
+                            left: 100%;
+                        }
+                    
+                        to {
+                            left: -100%;
+                        }
+                    }
+                }
+            }
+            
+            h3{
+                font-size: 30px;
+                
+
+                @include mobile{
+                    font-size: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 10px;
+                }
+
+                span{
+                    font-size: inherit;
+                    color: #fff;
+                    text-shadow:
+                        0 0 7px rgb(48, 117, 245),
+                        0 0 10px rgb(48, 132, 241),
+                        0 0 21px rgb(52, 129, 243),
+                        0 0 42px rgb(7, 31, 165),
+                        0 0 82px rgb(10, 22, 202),
+                        0 0 92px rgb(5, 39, 134),
+                        0 0 102px rgb(14, 11, 204),
+                        0 0 151px rgb(10, 7, 196);
+                                    }
+
+                .ityped-cursor{
+                        animation: blink 1s infinite;
+                                    }
+
+                        @keyframes blink {
+                            50%{
+                                opacity: 1;
+                            }
+                            100%{
+                                opacity: 0;
+                            }
+                        }
+                                }
+
+                                // .social-container{
+              
+                                   
+                                //     display: flex;
+                                //     position: relative;
+                                //     width: 700px;
+                                //     height: 80px;
+                                //     justify-content:center;
+                                //     align-items: center;
+                                //     margin-left: -120px;
+                                //     margin-top: 50px;
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                                //     &.social {
+                                        
+                                //         transition: transform 250ms;
+                                //         display: flex;
+                                        
+                                //         margin-left: 15px;
+                                //         margin-right: 15px;
+                                //         overflow: hidden;
+                                
+                                //         &.social:hover{
+                                //             transform: translateY(-2px);
+                                //         }
+                                
+                                       
+                                //     }
+                                
+                                    
+                                
+                                //     .youtube {
+                                //         color: red;
+                                //         margin-left: -500px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                        
+                                //     }
+                                
+                                //     .facebook{
+                                //         color: rgb(67, 126, 236);
+                                //         margin-left: 10px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                //     }
+                                
+                                //     .twitter{
+                                //         color: rgb(38, 147, 236);
+                                //         margin-left: 10px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                //     }
+                                
+                                //     .instagram{
+                                //         color: rgb(127, 28, 184);
+                                //         margin-left: 10px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                //     }
+                                
+                                //     .github{
+                                //         color: rgb(19, 22, 211);
+                                //         margin-left: 10px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                //     }
+                                
+                                //     .whatsapp{
+                                //         color: rgb(38, 219, 32);
+                                //         margin-left: 10px;
+                                //         margin-right: 10px;
+                                //         overflow: hidden;
+                                //         display: flex;
+                                //         position: relative;
+                                //     }
+                        
+                                //     .phone{
+                                //       color: rgb(230, 91, 27);
+                                //       margin-left: 10px;
+                                //       margin-right: 10px;
+                                //       overflow: hidden;
+                                //       display: flex;
+                                //         position: relative;
+                                //   }
+                        
+                                //   .email{
+                                //     color: rgb(68, 40, 134);
+                                //     margin-left: 10px;
+                                //     margin-right: 10px;
+                                //     overflow: hidden;
+                                //     display: flex;
+                                //         position: relative;
+                                // }
+                                
+                                    
+                                
+                                    
+                                // }
+
+
+                                ul{
+                                    position: absolute;
+                                    top: 70%; left: -230px;  width: 100%;   text-align: center;
+                                    transform: translate(0,-50%);
+                                    
+
+                                    li{
+                                        display: inline-block;
+                                        list-style: none;
+                                        margin-right: -30px;
+                                        // width: 250px;
+                                        // height: 50px;
+
+                                        a{
+                                            position: relative;
+                                            display: inline-block;
+                                            width: 40px;   height: 40px;   text-align: center;
+                                            border-radius: 30%;
+                                            background: #fff;  color: rgb(136, 126, 126);
+                                            text-decoration: none;
+                                            font-size: 17px;
+                                            box-shadow: inset 0 0 40px rgba(27, 26, 26, 0.2),0 30px 25px rgba(17, 17, 17, 0.3);
+                                            border: 5px solid #ffffff;
+                                            transition: .9s;
+                                            margin: 10px;
+                                            margin-right: 40px;
+                                            overflow: hidden;
+                                        }
+
+                                        .social{
+                                            line-height: 53px;
+                                            margin-left: 0px;
+                                        }
+
+                                        &:hover a{
+                                            box-shadow: inset 0 0 40px rgba(0,0,0,.2),0 5px 30px rgba(12, 12, 12, 0.5);
+                                        }
+
+                                        &:hover:nth-child(1) a{
+                                            color: #e6402a;
+                                        }
+
+                                        &:hover:nth-child(2) a{
+                                            color: #539cd3;
+                                        }
+
+                                        &:hover:nth-child(3) a{
+                                            color: #0e0d0d;
+                                        }
+
+                                        &:hover:nth-child(4) a{
+                                            color: #4e00b5;
+                                        }
+
+                                        &:hover:nth-child(5) a{
+                                            color: #00AFF0;
+                                        }
+
+                                        &:hover:nth-child(6) a{
+                                            color: #00f00c;
+                                        }
+
+                                        &:hover:nth-child(7) a{
+                                            color: #0024f0;
+                                        }
+
+                                        &:hover:nth-child(8) a{
+                                            color: #215a0b;
+                                        }
+                                    }
+                                 }
+
+                               
+
+                               
+
+                                .cv{
+                                    margin-bottom: 70px;
+                                    padding: 5px ;
+                                    color: white;
+                                    background-color: #0c0905;
+                                    text-align: center;
+                                    margin-left: -50px;
+                                    font-size: 20px;
+                                    border: 2px;
+                                    border-style: solid;
+                                    border-radius: 5px;
+                                    text-decoration: none;
+
+                                    @include mobile{
+                                        margin-left: 50px;
+                                        margin-bottom: 40px;
+                                    }
+
+
+                                }
+        
+                            }
+
+                            
+
+                           
+        a{
+            position:absolute;
+            bottom: 10px;
+            left: 30%;
+
+            
+
+            img{
+                width: 30px;
+                animation: arrowBlink 2s infinite;
+                
+                @include mobile{
+                    margin-left: 110px;
+                       
+                }
+               
+            }
+
+            
+
+            
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
+        } 
+
+       
+    }
+}
+

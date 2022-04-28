@@ -1,0 +1,178 @@
+@import "../../global.scss";
+
+.skills{
+    background: rgb(130, 130, 134) ;
+    background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
+    background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+       margin-top: 0;
+       margin-bottom: 10px; 
+       overflow: hidden;
+    
+    }
+
+    .education{
+        width: 800px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+        h3{
+            color: antiquewhite;
+            margin-left: 10px;
+            
+            overflow: hidden;
+            font-style: italic;
+            font-weight: 100;
+
+        }
+
+        p{
+            color: rgb(56, 175, 102);
+            margin-left: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+    }
+
+    .skill{
+        display: block;
+        position: relative;
+        height: 20px;
+        width: 800px;
+        border-radius: 55px;
+        border: 2px solid rgb(248, 243, 243);
+        overflow: hidden;
+        margin: 10px;
+        margin-bottom: -5px;
+        text-align: center;
+        
+
+        .html{
+            position: relative;
+            height: 20px;
+            width: 700px;
+            border-radius: 50px;
+            overflow: hidden;
+            color: white;
+            background-color: rgb(20, 94, 48);
+        }
+        
+        .css{
+            position: relative;
+            height: 20px;
+            width: 400px;
+            border-radius: 50px;
+            overflow: hidden;
+            color: white;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .bootstrap{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 300px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .javascript{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 350px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color:rgb(20, 94, 48);
+        }
+
+        .react{
+            color:white;
+            position: relative;
+            height: 20px;
+            width: 400px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+        
+        .react-native{
+            color:white;
+            position: relative;
+            height: 20px;
+            width: 300px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .nodeJs{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 200px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .mongoDB{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 400px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .sass{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 450px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .firebase{
+            color:white;
+            position: relative;
+            height: 20px;
+            width: 600px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+
+        .gitHub{
+            color: white;
+            position: relative;
+            height: 20px;
+            width: 600px;
+            border-radius: 50px;
+            overflow: hidden;
+            background-color: rgb(20, 94, 48);
+        }
+    }
+    
+}
+
+
