@@ -10,7 +10,7 @@
 .topbar {
     width: 100%;
     height: 75px;
-    color: #E04D01;
+    color: white;
     position: fixed;
      top: 0;
      left: 0;
@@ -40,7 +40,7 @@
 
             &:after {
                 font: 28px/0.65'Arima Madurai', cursive;
-                content: "OsMaN\a    Ismail";
+                content: "OsMaN\a    IsmaiL";
                 white-space: pre;
                 text-align: center;
                 height: 100%;
@@ -209,7 +209,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: #E04D01;
+                    background-color: white;
                     transform-origin: left;
                     transition: all 2s ease;
                     

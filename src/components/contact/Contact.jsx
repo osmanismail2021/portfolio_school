@@ -4,6 +4,11 @@ import {Person,Mail} from "@material-ui/icons"
 import Footer from "../footer/Footer";
 import "../footer/footer.scss"
 
+import emailjs from "emailjs-com";
+import React from "react";
+import Swal from 'sweetalert2'
+
+
 
 
 export default function Contact() {
@@ -12,7 +17,40 @@ export default function Contact() {
   const handleSubmit = (e)=>{
     e.preventDefault();
     setMessage(true)
+
+    emailjs
+      .sendForm(
+        "service_yojblms",
+        "template_99idjbg",
+        e.target,
+        "8gnJo9--eF8jJobv5"
+      )
+      .then(
+        result => {
+          console.log("result" + result.text);
+        
+         
+          Swal.fire({
+               //timer: 2000
+             position: 'midden',
+             title: 'Your mail has arrived.',
+            // showConfirmButton: false,
+           
+          }
+          
+           
+            
+          ) 
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
   }
+
+    
+  
 
   return (
     <div className='contact' id="contact">
@@ -25,10 +63,17 @@ export default function Contact() {
     <div className="left">
         <h2>@ Contact</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+          <input type="email"
+              className="from_name"
+              placeholder="Email Address"
+              name="from_name"
+              required />
+          <textarea type="text"
+              className="message"
+              placeholder="Subject"
+              name="message"></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP</span>}
+          {message && <span className="thnx">Thanks, I'll reply ASAP</span>}
         </form>
 
        

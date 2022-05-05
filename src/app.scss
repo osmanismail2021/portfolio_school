@@ -33,7 +33,7 @@ ul#socialIcons{
     position: absolute;
     justify-content: center;
     
-    top: 70%; left: -10px;  width: 100%;   text-align: center;
+    top: 65%; left: -10px;  width: 100%;   text-align: center;
     transform: translate(0,-50%);
 
     .itemContainer {
@@ -71,6 +71,7 @@ ul#socialIcons{
         position: relative;
         list-style: none;
         margin-bottom: 30px;
+        
        
         // width: 250px;
         // height: 50px;
@@ -80,7 +81,7 @@ ul#socialIcons{
             display: inline-block;
             width: 30px;   height: 30px;   text-align: center;
             border-radius: 30%;
-            background: rgba(255, 255, 255, 0);  color: rgb(136, 126, 126);
+            background: rgba(92, 93, 92, 0);  color: rgb(136, 126, 126);
             text-decoration: none;
             font-size: 12px;
             box-shadow: inset 0 0 40px rgba(65, 63, 63, 0.2),0 30px 25px rgba(63, 63, 63, 0.3);
@@ -89,6 +90,7 @@ ul#socialIcons{
             margin: 10px;
             margin-right: 40px;
             overflow: hidden;
+            padding: 5px;
         }
 
         .social{
