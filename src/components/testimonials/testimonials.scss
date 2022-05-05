@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Arimo:ital,wght@1,500&family=Exo:wght@200;300&family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 .testimonials {
     background: rgb(130, 130, 134);
@@ -10,19 +11,34 @@
   background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     
     
 
-    h1 {
-        font-size: 50px;
-        overflow: hidden;
-        margin-top: 30px;
+    .dikeyNav{
+        width: 120px;
+        height: 92%;
+        margin-bottom: -45px !important;
+        margin-top: auto;
+        margin: 20px;
+        background-color: black;
+        opacity: 0.2;
+        border-radius: 10px;
 
-        @include mobile{
-            font-size: 20px;
+        
+
+        p{
+            color: white;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: xx-large;
+            font-family: 'Exo', sans-serif;
+            margin-top: 165px;
+            margin-left: auto;
+            margin-right: auto;
+            
         }
     }
 

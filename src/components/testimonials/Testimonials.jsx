@@ -37,7 +37,10 @@ export default function Testimonials() {
   ];
   return (
     <div className='testimonials' id="testimonials">
-      <h1>Testimonials</h1>
+      <div className="dikeyNav">
+          <p>Testimonials</p>
+          
+        </div>
       <div className="container">
         {data.map((d) => (
 

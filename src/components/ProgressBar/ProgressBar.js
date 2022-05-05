@@ -6,9 +6,13 @@ export default function ProgressBar() {
     return(
         <div className="skills" id="progressbar">
 
-            <h2>Education & Skills</h2>
+        <div className="dikeyNav">
+          <p>Education & Skills</p>
+          
+        </div>
 
-            <div className="education">
+        <div className="second">
+        <div className="education">
                 <h3>INTEC BRUSSEL</h3>
                 <p>Front End Web Development (2021/2022)</p>
                 <h3>CVO & ENCORA & LBC</h3>
@@ -17,11 +21,11 @@ export default function ProgressBar() {
                 <p>English 2.1 (2013)</p>
                 <h3>ENCORA</h3>
                 <p>French 1.1 (2012)</p>
-                <h3>VDAB</h3>
+                <h3>VDAB  </h3>
                 <p>HACCP (Hazard Analysis and Critical Control Points) (2011)</p>
-                <h3>VDAB</h3>
+                <h3>VDAB  </h3>
                 <p>Keukenmedewerker (2011)</p>
-                <h3>ElektroTechnic TSO</h3>
+                <h3>ElektroTechnic TSO  </h3>
                 <p>Elektrotechniker (2004)</p>
 
             </div>
@@ -47,14 +51,6 @@ export default function ProgressBar() {
             </div>
 
             <div className="skill">
-                <div className="react-native">REACT NATIVE</div>
-            </div>
-
-            <div className="skill">
-                <div className="nodeJs">NODE.JS</div>
-            </div>
-
-            <div className="skill">
                 <div className="mongoDB">MongoDB</div> 
             </div>
 
@@ -69,6 +65,10 @@ export default function ProgressBar() {
             <div className="skill">
                 <div className="gitHub">GITHUB</div> 
             </div>
+        </div>
+            
+
+            
             
             
             

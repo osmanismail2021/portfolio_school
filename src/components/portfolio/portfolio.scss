@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Arimo:ital,wght@1,500&family=Exo:wght@200;300&family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 .portfolio{
     background: rgb(130, 130, 134);
@@ -10,86 +11,194 @@
   background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    
+    overflow: hidden;
 
-    h1{
-        font-size: 50px;
-        overflow: hidden;
+    .dikeyNav{
+        
+        width: 120px;
+        height: 92%;
+        margin: 20px;
+        margin-top: 85px !important;
+        background-color: black;
+        opacity: 0.2;
+        border-radius: 10px;
+        
+        
 
-        @include mobile{
-            font-size: 30px;
+        p{
+            color: antiquewhite;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: xx-large;
+            margin-top: 250px;
+            font-family: 'Exo', sans-serif;
+            
+            margin-left: auto;
+            margin-right: auto;
+
         }
         
     }
 
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
-    }
+    .second{
 
-        
-    }
-
-    .container{
-        width: 70%;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 150px;
+        width: 100%;
+        height: 100%;
+        
+        h1{
+            font-size: 50px;
+            overflow: hidden;
+            font-family: 'Exo', sans-serif;
+    
+            @include mobile{
+                font-size: 30px;
+            }
+            
+        }
+    
+        
+    
+        ul{
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            
 
-        @include mobile{
-            width: 100%;
-            flex-direction: column;
+            li{
+                margin-bottom: 50px;
+                margin-top: 50px;
+                font-family: 'Exo', sans-serif;
+                font-weight: bold;
+            }
+            
+        }
+    
+            
+        }
+    
+        .container{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
             margin-top: auto;
             margin-bottom: auto;
-        }
-
-
-    .item{
-        width: 400px;
-        height: 300px;
-        border-radius: 20px;
-        border: 1px solid white;
-        margin: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        position: relative;
-        transition: all .5s ease;
-        cursor: pointer;
-
-        @include mobile{
-            width: 220px;
-            height: 140px;
-
-        }
-
-        h3{
-            position: absolute;
-            font-size: 20px;
-        }
-
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            
+    
+            @include mobile{
+                width: 100%;
+                flex-direction: column;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+    
+    
+        .item{
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 30px black;
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            transition: all .5s ease;
+            cursor: pointer;
             z-index: 1;
-        }
-
-        &:hover{
-            background-color: rgb(0, 0, 0);
+            
+            align-items: flex-end;
+            
+            
+    
+            @include mobile{
+                width: 220px;
+                height: 140px;
+    
+            }
+    
+            h3{
+                position: absolute;
+                font-size: 20px;
+                bottom: 10px;
+                font-family: 'Exo', sans-serif;
+            }
+    
+            #github{
+                position: absolute;
+                background-color: rgb(11, 12, 12);
+                color: white;
+                width: 100px;
+                height: 50px;
+                margin-left: -330px;
+                bottom: 40px;
+                border-radius: 15px;
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                
+    
+                &:hover{
+                    background-color: rgb(161, 148, 148);
+                    font-size:medium;
+                    cursor: pointer;
+                }
+            }
+    
+            #live{
+                position: absolute;
+                background-color: rgb(153, 149, 152);
+                width: 100px;
+                height: 50px;
+                margin-right: 50px;
+                right: 30px;
+                bottom: 40px;
+                border-radius: 15px;
+                border: none;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                
+                
+    
+                &:hover{
+                    background-color: rgb(219, 209, 209);
+                    font-size: large;
+                    cursor: pointer;
+                }
+                
+            }
+    
             img{
-                opacity: 0.2;
-                z-index: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 2;
+            }
+    
+            &:hover{
+                background-color: rgb(0, 0, 0);
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
             }
         }
     }
+    
+
+   
 
       
 }

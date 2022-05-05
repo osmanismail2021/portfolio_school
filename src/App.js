@@ -24,10 +24,10 @@ function App() {
         <Intro/>
         <Portfolio/>
         <ProgressBar/>
-        <Works/>
+        {/* <Works/> */}
         <Testimonials/>
         <Contact/>
-        {/* <Footer/> */}
+        
 
       </div>
       
