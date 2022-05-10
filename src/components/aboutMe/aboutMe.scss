@@ -1,6 +1,7 @@
 @import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai&family=Arimo:ital,wght@1,500&family=Exo:wght@200;300&family=Fredoka:wght@300;400;500;600;700&display=swap');
 
-.testimonials {
+.aboutMe {
     background: rgb(130, 130, 134);
   background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
@@ -10,16 +11,41 @@
   background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     
     
 
-    h1 {
-        font-size: 50px;
+    .dikeyNav{
+        width: 120px;
+        height: 91%;
+        margin-bottom: -45px !important;
+        margin-top: auto;
+        margin: 20px;
+        background-color: black;
+        opacity: 0.2;
+        border-radius: 10px;
+        border: 3px ridge  white;
 
         @include mobile{
-            font-size: 20px;
+            width: 50px;
+            height: 80%;
+            margin-top: -15px;
+        }
+
+        
+
+        p{
+            color: white;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: xx-large;
+            font-family: 'Exo', sans-serif;
+            margin-top: 165px;
+            margin-left: auto;
+            margin-right: auto;
+            
         }
     }
 
@@ -29,6 +55,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0;
 
         @include mobile{
             flex-direction: row;
@@ -37,10 +64,11 @@
 
         
         .card{
-            width: 250px;
-            height: 70%;
+            width: 750px;
+            height: 80%;
+            border: 3px ridge  grey;
             border-radius: 10px;
-            box-shadow: 0px 0px 20px -8px rgb(243, 117, 44);
+            box-shadow: 0px 0px 30px -8px #FF7700;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -50,7 +78,8 @@
             background-color: rgb(48, 45, 45);
 
             @include mobile{
-                height: 160px;
+                width: 220px;
+                height: 600px;
             }
 
             
@@ -78,32 +107,42 @@
                 
 
                 img{
-                    &.left{
-                        width: 50px;
-                        height: 50px;
-                        transform: rotate(90deg);
+                    // &.left{
+                    //     width: 50px;
+                    //     height: 50px;
+                    //     transform: rotate(90deg);
 
-                    }
-                    &.right{
-                        width: 40px;
-                        height: 40px;
+                    // }
+                    // &.right{
+                    //     width: 40px;
+                    //     height: 40px;
                        
                         
-                    }
+                    // }
                     &.user{
-                        height: 60px;
-                        width: 60px;
-                        border-radius: 50%;
+                        height: 220px;
+                        width: 300px;
+                        border-radius: 20%;
                         object-fit: cover;
                         margin: 0 30px;
-                        
+
+                        @include mobile{
+                            width: 130px;
+                            height: 130px;
+                        }
                     }
                 }
             }
             .center{
+                text-align: center;
                 padding: 10px;
-                background-color: rgb(192, 82, 38);
+                background-color:#FF7700;
                 border-radius: 10px;
+                font-family: 'Exo', sans-serif;
+
+                @include mobile{
+                    height: 375px;
+                }
             }
 
             .bottom{
@@ -113,7 +152,7 @@
                 flex-direction: column;
 
                 h3{
-
+                    font-family: 'Exo', sans-serif;
                 }
             }
         }

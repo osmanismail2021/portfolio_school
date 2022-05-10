@@ -4,15 +4,15 @@
 .menu {
     width: 300px;
     height: 100vh;
-    background: rgba(206,188,155,1);
-    background: rgb(130, 130, 134);
-    background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
-    background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-    background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-    background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-    background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
+    // background: rgba(206,188,155,1);
+    // background: rgb(130, 130, 134);
+    // background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+    // background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
+    // background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    // background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    // background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+    // background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
     position: fixed;
     top: 0;
     right: -300px;
@@ -25,9 +25,17 @@
 
     &.active{
         right: 0;
+        background-image: url("../assets/orange_liquid.png");
+        background-position: -60px 170px;
+        
+
+        
+
+
     }
 
     ul {
+        
         margin: 0;
         padding: 0;
         list-style: none;
@@ -35,6 +43,8 @@
         font-weight: 300;
         color: white;
         width: 70%;
+        
+        text-align: justify;
 
         li {
             margin-bottom: 30px;

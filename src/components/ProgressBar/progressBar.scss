@@ -21,13 +21,21 @@
 
     .dikeyNav{
         width: 120px;
-        height: 92%;
+        height: 91%;
         margin-bottom: -45px !important;
         margin-top: auto;
         margin: 20px;
         background-color: black;
         opacity: 0.2;
         border-radius: 10px;
+        border: 3px ridge  white;
+
+        @include mobile{
+            width: 40px;
+            height: 80%;
+            margin-top: -15px;
+            
+        }
 
         
 
@@ -40,6 +48,11 @@
             margin-top: 55px;
             margin-left: auto;
             margin-right: auto;
+
+            @include mobile{
+                font-size:x-large;
+                margin-top: 75px;
+            }
             
         }
     }
@@ -53,6 +66,11 @@
         height: 100%;
         align-items: center;
         justify-self: center;
+
+        @include mobile{
+            padding-left: 0;
+            padding-top: 150px;
+        }
         
         
 
@@ -63,6 +81,13 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @include mobile{
+                width: 300px;
+                height: 50%;
+                text-align: center;
+                
+            }
             
             
             h3{
@@ -71,6 +96,13 @@
                 font-family: 'Exo', sans-serif;
                 overflow: hidden;
                 font-weight: 100;
+                text-align: start;
+
+                @include mobile{
+                    text-align: center;
+                    font-size: 15px;
+                    
+                }
     
             }
     
@@ -80,6 +112,12 @@
                 margin-left: 10px;
                 margin-bottom: 10px;
                 overflow: hidden;
+
+                @include mobile{
+                    text-align: center;
+                    margin-left: 0;
+                    font-size: 13px;
+                }
             }
         }
     
@@ -89,11 +127,20 @@
             height: 20px;
             width: 800px;
             border-radius: 55px;
-            border: 2px solid rgb(248, 243, 243);
+            border: 3px ridge rgb(248, 243, 243);
             overflow: hidden;
             margin: 10px;
             margin-bottom: -5px;
             text-align: center;
+
+            @include mobile{
+                width: 260px;
+                height: 15px;
+                font-size: 10px;
+                text-align: center;
+                
+                
+            }
             
             
     
@@ -107,6 +154,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 220px;
+                    height: 15px;
+                }
             }
             
             .css{
@@ -119,6 +171,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 150px;
+                    height: 15px;
+                }
             }
     
             .bootstrap{
@@ -131,6 +188,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+                
+                @include mobile{
+                    width: 100px;
+                    height: 15px;
+                }
             }
     
             .javascript{
@@ -143,6 +205,11 @@
                 background-color:#FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+               
+                @include mobile{
+                    width: 120px;
+                    height: 15px;
+                }
             }
     
             .react{
@@ -155,6 +222,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+                
+                @include mobile{
+                    width: 140px;
+                    height: 15px;
+                }
             }
             
             .react-native{
@@ -191,6 +263,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 100px;
+                    height: 15px;
+                }
             }
     
             .sass{
@@ -203,6 +280,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 160px;
+                    height: 15px;
+                }
             }
     
             .firebase{
@@ -215,6 +297,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 150px;
+                    height: 15px;
+                }
             }
     
             .gitHub{
@@ -227,6 +314,11 @@
                 background-color: #FF7700;
                 font-family: 'Exo', sans-serif;
                 font-weight: bold;
+
+                @include mobile{
+                    width: 180px;
+                    height: 15px;
+                }
             }
         }
     }

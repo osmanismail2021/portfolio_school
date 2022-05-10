@@ -60,17 +60,18 @@ export default function Contact() {
       <div className="dikeyNav">
           <p>Contact</p>
       </div>
-    <div className="left">
+      <div className="column">
+        <div className="left">
         <h2>@ Contact</h2>
         <form onSubmit={handleSubmit}>
           <input type="email"
               className="from_name"
-              placeholder="Email Address"
+              placeholder="Email"
               name="from_name"
               required />
           <textarea type="text"
               className="message"
-              placeholder="Subject"
+              placeholder="Message"
               name="message"></textarea>
           <button type="submit">Send</button>
           {message && <span className="thnx">Thanks, I'll reply ASAP</span>}
@@ -83,6 +84,8 @@ export default function Contact() {
       <div className="right">
         <img src="assets/pngwing.com (3).png" alt="" />
       </div>
+      </div>
+    
     </div>
 
     

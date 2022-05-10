@@ -10,7 +10,7 @@
 .topbar {
     width: 100%;
     height: 75px;
-    color: white;
+    color:  #FF7700;
     position: fixed;
      top: 0;
      left: 0;
@@ -186,7 +186,7 @@
               text-decoration: none;
               color: inherit;
               margin-left: 8px;
-          }
+            }
         
 
         
@@ -209,7 +209,7 @@
                 span {
                     width: 100%;
                     height: 3px;
-                    background-color: white;
+                    background-color: #E04D01;
                     transform-origin: left;
                     transition: all 2s ease;
                     
@@ -220,14 +220,15 @@
 
     &.active {
         
-        background: rgb(130, 130, 134);
-  background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
-  background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-  background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-  background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
-  background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
+      background-image: url(../assets/orange_liquid.png);
+      //       background: rgb(130, 130, 134);
+  // background: -moz-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  // background: -webkit-gradient(left top, right bottom, color-stop(0%, rgb(130, 130, 134)), color-stop(51%, rgb(55, 54, 59)), color-stop(100%,  rgb(11, 11, 12)));
+  // background: -webkit-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  // background: -o-linear-gradient(-45deg,rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  // background: -ms-linear-gradient(-45deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%,  rgb(11, 11, 12) 100%);
+  // background: linear-gradient(135deg, rgb(130, 130, 134) 0%, rgb(55, 54, 59) 51%, rgb(11, 11, 12) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebc9b', endColorstr='#2a1f19', GradientType=1 );
         color: white;
 
         .hamburger {

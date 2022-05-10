@@ -37,6 +37,12 @@
         font-size: larger;
         font-family: 'Exo', sans-serif;
         font-weight: bold;
+
+        @include mobile{
+            margin: 5px;
+            margin-top: 20px;
+            font-size: small;
+        }
         
         &:hover {
             font-weight: 400;
@@ -62,6 +68,11 @@
         margin-top: 160px;
         color: rgb(134, 132, 130);
         font-family: 'Exo', sans-serif;
+
+        @include mobile{
+            text-align: center;
+            font-size: small;
+        }
     }
     
 

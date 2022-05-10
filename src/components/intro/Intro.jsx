@@ -38,7 +38,7 @@ export default function Intro() {
 
         <div className="left">
         <div className="imgContainer">
-            <img className="vector" src="./assets/24144-6-vector-file.png" alt="" />
+            <img className="vector" src="./assets/—Pngtree—orange juice liquid crown_5802551.png" alt="" />
             <img className="osman" src="assets/blackwitsaydam.png" alt="" />
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function Intro() {
             </a>
           </li>
           <li>
-          <a href="#" className="facebook social">
+          <a href="https://www.facebook.com/osman.sansar.3" className="facebook social">
                 <FontAwesomeIcon icon={faFacebook} size="2x" />
             </a>
           </li>
@@ -112,7 +112,7 @@ export default function Intro() {
 
             
 
-            <a href="#contact">
+            <a href="#aboutMe">
               <img src="assets/down-arrow.png" alt="" />
             </a>
 
